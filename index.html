@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Name</title>
-    <link rel="stylesheet" href="./MAIN/CSS/main.css">
+    <link rel="stylesheet" href=".\MAIN\CSS\main.css"> <!-- Path to your CSS file -->
 </head>
 <body>
     <!-- Top Band: Website Name -->
@@ -51,28 +51,6 @@
     </section>
 
     <!-- JavaScript to Toggle Dropdown -->
-    <script>
-        document.querySelectorAll('.nav-bar li').forEach(function(menuItem) {
-            menuItem.addEventListener('click', function(event) {
-                // Prevent the default link behavior
-                event.preventDefault();
-                
-                // Toggle the dropdown visibility
-                const dropdown = this.querySelector('.dropdown');
-                if (dropdown) {
-                    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-                }
-            });
-        });
-
-        // Close dropdowns if clicked outside
-        document.addEventListener('click', function(event) {
-            if (!event.target.closest('.nav-bar')) {
-                document.querySelectorAll('.nav-bar .dropdown').forEach(function(dropdown) {
-                    dropdown.style.display = 'none';
-                });
-            }
-        });
-    </script>
+    <script src=".\MAIN\JS\main.js"></script> <!-- Path to your JS file -->
 </body>
 </html>
