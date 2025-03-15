@@ -51,6 +51,7 @@ body {
     width: 100%; /* Take up full width of navbar */
     height: 100%; /* Take up full height of navbar */
     text-align: center;
+    display: block;
 }
 
 /* Menu Dropdown (Hidden by default) */
@@ -81,6 +82,11 @@ body {
 
 .menu-dropdown a:hover {
     background-color: #444; /* Darker gray on hover */
+}
+
+/* Show the dropdown menu when hovering over the menu item */
+.menu-item:hover .menu-dropdown {
+    display: block;
 }
 
 /* Menu Item hover effect */
