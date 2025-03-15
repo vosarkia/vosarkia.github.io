@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Name</title>
-    <link rel="stylesheet" href=".\MAIN\CSS\main.css">
+    <link rel="stylesheet" href="./MAIN/CSS/main.css">
 </head>
 <body>
     <!-- Top Band: Website Name -->
@@ -49,5 +49,23 @@
         <p>Phone: 123-456-7890</p>
         <p>Email: contact@website.com</p>
     </section>
+
+    <!-- JavaScript to Toggle Dropdown -->
+    <script>
+        document.querySelectorAll('.nav-bar li').forEach(function(menuItem) {
+            menuItem.addEventListener('click', function() {
+                this.classList.toggle('show-dropdown');
+            });
+        });
+
+        // Close dropdowns if clicked outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.nav-bar')) {
+                document.querySelectorAll('.nav-bar li').forEach(function(menuItem) {
+                    menuItem.classList.remove('show-dropdown');
+                });
+            }
+        });
+    </script>
 </body>
 </html>

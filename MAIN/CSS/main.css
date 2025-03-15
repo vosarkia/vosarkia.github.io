@@ -59,10 +59,11 @@ h1, h2 {
     top: 100%;
     left: 0;
     min-width: 160px;
+    z-index: 1; /* Ensure it appears above other content */
 }
 
-.nav-bar li:hover .dropdown {
-    display: block;
+.nav-bar li.show-dropdown .dropdown {
+    display: block; /* Show the dropdown when class is added */
 }
 
 .nav-bar .dropdown li a {
