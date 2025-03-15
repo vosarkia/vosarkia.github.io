@@ -29,24 +29,64 @@ header .container {
 header nav .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 header nav .nav-links li {
+    position: relative;
     margin: 0 15px;
 }
 
-header nav .nav-links a {
+header nav .nav-links li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
 }
 
-header .cta-button {
+header nav .nav-links li a:hover {
     background: #f9a825;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
     border-radius: 5px;
+}
+
+/* Dropdown Menu Styling */
+nav ul .dropdown {
+    position: relative;
+}
+
+nav ul .dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #004080;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border-radius: 5px;
+}
+
+nav ul .dropdown-menu li {
+    margin: 0;
+}
+
+nav ul .dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+nav ul .dropdown-menu li a:hover {
+    background: #f9a825;
+    border-radius: 0;
+}
+
+/* Show Dropdown on Hover */
+nav ul .dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 /* Hero Section Styling */
