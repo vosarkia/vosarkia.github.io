@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Name</title>
-    <link rel="stylesheet" href=".\MAIN\CSS\main.css"> <!-- Path to your CSS file -->
+    <link rel="stylesheet" href="MAIN/CSS/main.css"> <!-- Path to your CSS file -->
 </head>
 <body>
     <!-- Top Band: Website Name -->
@@ -15,17 +15,19 @@
     <!-- Second Band: Dropdown Menus -->
     <nav class="nav-bar">
         <ul>
-            <li><a href="#">Menu 1</a>
-                <ul class="dropdown">
-                    <li><a href="#">Submenu 1</a></li>
-                    <li><a href="#">Submenu 2</a></li>
-                </ul>
+            <li class="dropdown">
+                <button class="dropbtn">Menu 1</button>
+                <div class="dropdown-content">
+                    <a href="#">Submenu 1</a>
+                    <a href="#">Submenu 2</a>
+                </div>
             </li>
-            <li><a href="#">Menu 2</a>
-                <ul class="dropdown">
-                    <li><a href="#">Submenu 1</a></li>
-                    <li><a href="#">Submenu 2</a></li>
-                </ul>
+            <li class="dropdown">
+                <button class="dropbtn">Menu 2</button>
+                <div class="dropdown-content">
+                    <a href="#">Submenu 1</a>
+                    <a href="#">Submenu 2</a>
+                </div>
             </li>
             <li><a href="#">Menu 3</a></li>
         </ul>
@@ -51,6 +53,6 @@
     </section>
 
     <!-- JavaScript to Toggle Dropdown -->
-    <script src=".\MAIN\JS\main.js"></script> <!-- Path to your JS file -->
+    <script src="MAIN/JS/main.js"></script> <!-- Path to your JS file -->
 </body>
 </html>
