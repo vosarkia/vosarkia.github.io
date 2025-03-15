@@ -53,7 +53,11 @@
     <!-- JavaScript to Toggle Dropdown -->
     <script>
         document.querySelectorAll('.nav-bar li').forEach(function(menuItem) {
-            menuItem.addEventListener('click', function() {
+            menuItem.addEventListener('click', function(event) {
+                // Prevent the link from navigating
+                event.preventDefault();
+                
+                // Toggle the dropdown visibility
                 this.classList.toggle('show-dropdown');
             });
         });
