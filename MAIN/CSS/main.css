@@ -25,6 +25,9 @@ body {
     display: flex;
     background-color: #333; /* Dark gray */
     padding: 0;
+    justify-content: center; /* Centers the nav items */
+    position: relative;
+    z-index: 1;
 }
 
 /* Navbar list */
@@ -34,7 +37,7 @@ body {
     margin: 0;
     display: flex;
     width: 100%;
-    justify-content: space-around; /* Distribute buttons evenly */
+    justify-content: space-evenly; /* Evenly distribute the menu items */
 }
 
 /* Menu Button */
@@ -68,6 +71,16 @@ body {
 /* Menu Dropdown Content */
 .menu-dropdown p {
     margin: 10px 0;
+}
+
+/* Links inside the dropdown */
+.menu-dropdown a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-dropdown a:hover {
+    background-color: #444; /* Darker gray on hover */
 }
 
 /* Menu Item hover effect */
