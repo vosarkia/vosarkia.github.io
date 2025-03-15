@@ -7,55 +7,116 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
     color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
 }
 
 /* Header Styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+    background: #004080;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header nav .nav-links li {
+    margin: 0 15px;
+}
+
+header nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .cta-button {
+    background: #f9a825;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    background: #f9a825;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Services Section */
+.services {
+    padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.services .service-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-header p {
-    font-size: 1.2em;
+.services .service-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Main Section Styling */
-main {
+.services .service-item i {
+    font-size: 2rem;
+    color: #004080;
+}
+
+/* News Section */
+.news {
     padding: 20px;
+    background: #f0f0f0;
 }
 
-section {
-    margin-bottom: 20px;
+.news .news-items {
+    display: flex;
+    gap: 20px;
 }
 
-h2 {
-    color: #444;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
+.news .news-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
+    background: #333;
+    color: white;
     text-align: center;
     padding: 10px 0;
-    background: #222;
-    color: #fff;
-    margin-top: 20px;
 }
